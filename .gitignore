@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+eggs/
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# NEAT checkpoints
+neat-checkpoint-*
+*.pkl
+
+# Pygame / OS
+*.pyc
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs & debug
+*.log
+crash_log.txt
+
+# Sensitive config (if any)
+.env
+config_secret.py
