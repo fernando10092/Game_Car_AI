@@ -13,7 +13,6 @@ font = pygame.font.Font(None, 36)
 
 
 def menu():
-    """Returns True to play, False to quit."""
     while True:
         screen.fill("green")
         screen.blit(font.render("1 - Jogar", True, "blue"), (10, 25))
@@ -38,8 +37,8 @@ def game():
     street = Street()
     obstacle = Obstacle()
     colliders = 0
-    start_time = pygame.time.get_ticks()  # resets every new game
-    last_collision_time = 0               # cooldown control
+    start_time = pygame.time.get_ticks() 
+    last_collision_time = 0               
 
     while True:
         for event in pygame.event.get():
@@ -75,8 +74,6 @@ def game():
         pygame.display.update()
         clock.tick(60)
 
-
-# --- main loop ---
 while True:
     if not menu():
         break
